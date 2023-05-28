@@ -1,34 +1,57 @@
 # SpaceLaunch Repository
 
-Welcome to the SpaceLaunch repository! This repository contains an application that helps you calculate the most appropriate day for a space shuttle launch based on weather conditions. The application takes into account the weather forecast for the first half of July and specific criteria for a successful shuttle launch.
+Welcome to the SpaceLaunch repository!  This repository contains an application that helps you calculate the most appropriate day for a space shuttle launch based on weather conditions.  
 
 
 <p align="center">
 <img src="/SpaceLaunch/Screenshots/4.png" alt="Logo">
 </p>
 
-## Introduction
+## Home
+ 
 
-The purpose of this application is to assist in determining the best launch day for a space shuttle mission. It takes weather conditions into account, allowing you to make an informed decision based on the forecast.
-
-### Console Home Screen
  
 <p align="center">
-  <img src="/SpaceLaunch/Screenshots/1.png" alt="Home Screen">
+  <img src="/SpaceLaunch/Screenshots/5.png" alt="Home Screen">
 </p>
-The application requires the following input parameters:
+The application provides user-friendly experience, with multilingual UI (English & German & French) with the ability to change the language.
 
 ### Add Parameters
 
  
 <p align="center">
-  <img src="/SpaceLaunch/Screenshots/2.png" alt="Add Parameters">
+  <img src="/SpaceLaunch/Screenshots/6.png" alt="Add Parameters">
 </p>
 
 - **File name**: The path to the weather forecast file on the file system.
 - **Sender email address**: The email address of the sender for the launch information.
 - **Password**: The password associated with the sender email address.
 - **Receiver email address**: The email address of the recipient for the launch information.
+
+### Reading the CSV File Path
+<p align="center">
+  <img src="/SpaceLaunch/Screenshots/7.png" alt="Reading the CSV File Path">
+</p>
+The type of the accepted input file for the weather forecast (filename parameter) is CSV and has the following structure:
+
+- Day/Parameter; 
+- Temperature (C);
+- Wind (m/s);
+- Humidity (%);
+- Precipitation (%);
+- Lightning;
+- Clouds;
+
+### Calculate the most appropriate date
+The criteria for the weather conditions for a space shuttle launch is as
+follows:
+- Temperature between 2 and 31 degrees Celsius;
+- Wind speed no more than 10m/s (the lower the better);
+- Humidity less than 60% (the lower the better);
+- No precipitation;
+- No lightings;
+- No cumulus or nimbus clouds.
+
 
 ### Create and Send CSV
  
